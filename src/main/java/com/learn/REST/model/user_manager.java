@@ -14,7 +14,7 @@ public class user_manager {
     @Column(name="id")
     private int id;
 
-    @Column(name="login name")
+    @Column(name="login_name")
     private String login_name;
 
     @Column(name="password")
