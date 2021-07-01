@@ -1,12 +1,9 @@
-package com.learn.REST.model;
+package com.learn.REST.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-public class user_manager {
+public class users {
 
     @Id
     @GeneratedValue
@@ -20,7 +17,7 @@ public class user_manager {
     @Column(name="password")
     private String password;
 
-    public user_manager(){
+    public users(){
 
     }
 
