@@ -3,25 +3,22 @@ package com.learn.REST.entity;
 import javax.persistence.*;
 
 @Entity
-public class users {
-
-    @Id
-    @GeneratedValue
-
-    @Column(name="id")
-    private int id;
-
-    @Column(name="login_name")
+public class Users {
+    private Integer id;
     private String login_name;
-
-    @Column(name="password")
     private String password;
 
-    public users(){
+    public Users() {}
 
+    public Users(Integer id, String login_name, String password){
+        this.id = id;
+        this.login_name = login_name;
+        this.password = password;
     }
 
-    public int getId() {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Integer getId() {
         return id;
     }
 
