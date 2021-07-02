@@ -3,10 +3,10 @@ Maven - Spting Boot - RESTful CRUD API with MySQL database.
 To use this program firstly create MySQL database table with id, login_name and password. 
 Set every one of them to "Not Null" and set the Id to "Primary Key" and "Auto Increment".
 
-After this you are all set with the database. 
+In the application.yml (src/main/resources/application.yml) set up url and your username and password 
+to the database, to create a succesfull connection.
 
-In the application.yml set up your username and password to the database with the url to it,
-to create a succesfull connection.
+After this you are all set with the database. 
 
 ------------------------------------------------------------------------------------------------------
 To add, update or delete users from the database using the program you will need to use curl commands:
